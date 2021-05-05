@@ -34,7 +34,7 @@ target = dataframe['price']
 
 def model(x, w, b):
     # vectorized model
-    return np.dot(x, w.T)
+    return np.dot(x, w.T)+b
 
 
 def loss(yhat, y):
